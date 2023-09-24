@@ -1,8 +1,76 @@
+:root {
+  --laranja: #ffa500;
+  --azul-escuro: #00008b;
+  --branco: #ffffff
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  background-color: orange;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--laranja);
+
+}
+
+.container {
+  margin: 0 auto;
+  width: 80vw;
+  height: 90vh;
+
+  border-radius: 18px;
+
+  background-color: whitesmoke;
+}
+
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+.semana {
+  background-color: ;
+  display: block;
+  text-align: center;
+  padding: 6%;
+}
+
+.dia {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.dia__link {
+  display: block;
+  margin: 1rem;
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  padding: 2%;
+
+  border-radius: 18px;
+
+}
+
+.dia__link:hover {
+  background-color: red;
+  color: var(--azul-escuro);
+}
+
+.dia__link:active {
+  background-color: red;
+  color: var(--azul-escuro);
 }
