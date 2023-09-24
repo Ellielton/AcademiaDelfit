@@ -31,7 +31,7 @@ body {
 .container {
   margin: 0 auto;
   width: 80vw;
-  height: 90vh;
+  max-height: 100vh;
 
   border-radius: 18px;
 
@@ -70,14 +70,19 @@ body {
 
   border-radius: 18px;
 
+  transition: all 1s;
 }
 
 .dia__link:hover {
   background-color: var(--vermolho);
   color: var(--azul-escuro);
+  text-decoration: underline;
 }
 
 .dia__link:active {
   background-color:var(--vermolho);
   color: var(--azul-escuro);
+  text-decoration: underline;
+
 }
+
